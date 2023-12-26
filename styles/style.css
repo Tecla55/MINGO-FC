@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Outfit', sans-serif;
+}
+
+
+/*Inicio header*/
+
+header {
+    background-color: #57c2d6;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.icon_menu {
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 84px;
+}
+
+.logo_text {
+    display: flex;
+    color: white ;
+    align-items: center;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+    grid-gap: 24px;
+    align-items: center;
+    margin-left: 800px;
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.menu_item a:hover {
+    color: #79263a;
+}
+
+.menu_item.active a {
+    color: #79263a ;
+} 
+
+
+
+
+/*Inicio Main*/
+
+.portada {
+    background-color: #79263a;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_portada {
+    display: flex;
+    width: 790px;
+    border: 1px solid black;
+
+}
+
+.titulo_portada {
+    display: flex;
+    position: absolute;
+    background-color: #57c2d6;
+    color: white;
+    font-size: 40px;
+    margin-top: 350px;
+    margin-right: 400px ;
+    padding: 0 20px 0 10px;
+}
+
+.titulo_portada2 {
+    display: flex;
+    position: absolute;
+    background-color: #57c2d6;
+    color: white;
+    margin-top: 450px;
+    font-size: 40px;
+    padding: 0 20px 0 10px;
+    margin-right: 150px;
+}
+
+
+
+/* Inicio Foooter */
+
+footer ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color:#57c2d6;
+    padding: 60px;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_links {
+    width: 20%;
+    padding: 0 50px;
+}
+
+.footer_links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    border-bottom: 2px solid white;
+    font-weight: 400px;
+    display: inline-block;
+}
+
+.footer_links ul li a {
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer_links ul li a:hover {
+    color: #79263a;
+    padding-left: 6px;
+}
+
+.social_links a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #219eb4;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.social_links a:hover  {
+    background-color: #79263a;
+}
+
+
+
+
+
+
+
+/* MAIN FUTBOL */
+
+
+
+/* Tabla de psociones */
+
+
+.titulo_posiciones {
+    color: white;
+    background-color: #79263a;
+    padding-inline: 10px;
+    display: flex;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.posiciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1300px;
+    margin-bottom: 110px;
+    margin-top: 20px;
+    
+}
+
+.tabla_posiciones {
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #57c2d6;
+    color: #fff;
+}
+
+
+.primero {
+    background-color: rgb(14, 177, 14);
+}
+
+.segundo {
+    background-color: rgb(124, 231, 124);
+}
+
+.anteultimo {
+    background-color: rgb(228, 74, 74) ;
+}
+
+.ultimo {
+    background-color: rgb(228, 74, 74) ;
+}
+
+
+
+/* Resultados */
+
+
+.fondo_resultado {
+    background-color: #79263a;
+    padding-bottom: 50px;
+}
+
+.titulo_fixture {
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    display: flex;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.fixture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1390px;
+    margin-bottom: 110px;
+    margin-top: 20px;
+    
+}
+
+.container_resultados {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+.resultados {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+  .resultados th, .resultados td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+  .resultados th {
+    background-color: #57c2d6;
+    color: #fff;
+}
+
+
+/* Plantel profesional */
+
+
+.plantel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1390px;
+    margin-bottom: 110px;
+    margin-top: 20px;
+}
+
+.titulo_plantel {
+    color: white;
+    background-color: #79263a;
+    padding-inline: 10px;
+    display: flex;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 40px;
+    font-size: 24px;
+
+}
+
+.jugadores1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-top: 100px;
+    padding-bottom: 100px
+
+}
+
+.player-card {
+  background-color: ;
+  border-radius: 12px;
+  border: solid 1px #57c3d663;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  text-align: center;
+  width: 300px; /
+}
+
+.player-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.player-card h2 {
+  margin-bottom: 10px;
+}
+
+.player-card p {
+  margin: 5px 0;
+}
+
+.jugadores2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-bottom: 100px
+
+}
+
+.jugadores3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding-bottom: 100px
+
+}
+
+
+/* MULTIMEDIA */
