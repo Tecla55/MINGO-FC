@@ -4,90 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingo F.C | Club</title>
-    <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
     <!--Inicio header-->
     
     <header>
-        <nav class="navbar">
-            <a class="icon_menu" href="../index.html">
-                <img class="logo" src="../img/logo.png" alt="Logo de Mingo">
-                <h1 class="logo_text">MINGO F.C.</h1>
-            </a>
-            <ul class="menu">
-                <li class="menu_item"><a href="../index.html">Inicio</a></li>
-                <li class="menu_item active"><a href="../pages/club.html">Club</a></li>
-                <li class="menu_item"><a href="../pages/futbol.html">Fútbol</a></li>
-                <li class="menu_item"><a href="../pages/socios.html">Socios</a></li>
-                <li class="menu_item"><a href="../pages/tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg custom-navbar" style="background-color: #57c2d6;">
+            <div class="container">
+                
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="logo mingo" height="80px">
+                </a>
+        
+                <a href="../index.html" style="text-decoration: none;">
+                    <h1 style="font-weight: 700; font-style: italic; color: white; font-size: 30px; margin-top: 6px; margin-right: 15px;">MINGO F.C.</h1>
+                </a>
+        
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mi-menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/club.html" style="color: #79263a; font-size: 18px; font-weight: 400; transition: color 0.3s;">Club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/futbol.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Fútbol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/socios.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Socios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tienda.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s; "onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
 
 
+    <!--Inicio Main-->
+
+    <main>
+        <section class="historia">
+            <h2>Historia del Club</h2>
+            <img src="../img/historia.jpeg" alt="primera foto de Mingo F.C.">
+            <p>
+                Un 4 de agosto, pero de 2023, nacía el club más grande del mundo: Mingo F.C. 
+
+                <br>
+                <br>
+
+                
+                Allá por 1900 se inauguró un nuevo local de la tienda “A la Ciudad de Londres”, en la esquina sudeste de Avenida de Mayo y Perú, con entradas por Avenida de Mayo 570 y 600, Victoria 599 y Perú 92. Una gran tienda con estilo europeo donde se conseguían trajes, vestidos, zapatos, toda la moda masculina y femenina.
+
+                <br>
+                <br>
+                
+                Las grandes tiendas de la época nutrían con mano de obra nacional a nuevos equipos de fútbol que irían desplazando la preeminencia británica de las empresas y colegios extranjeros. Sus jugadores dejaban de entre apellidos ingleses para que sean castizos y latinos en general.
+
+                <br>
+                <br>
+                
+                El equipo de “A la Ciudad de Londres” se denominó Maipú Banfield. Participaba de partidos amistosos y de desafíos intercomerciales con otras tiendas y fábricas. Había una superpoblación en las diferentes alineaciones, lo que provocó una purga en las varias divisiones que jugaban amistosos. Obviamente quedaron excluidos los jugadores de menor edad.
+
+                <br>
+                <br>
+                
+                Un grupo de jóvenes amigos que trabajaban como cadetes y vendedores, se sintió particularmente afectado ya que uno de ellos, Marcelo Degiorgi, era el back titular de la alineación y debió dejar la misma sin demasiada explicaciones. Esto, aunado al hecho de que debían de seguir abonando igual cuota social que los adultos que acaparaban los puestos titulares en el equipo de fútbol, hizo que hartos de la situación planteada decidieran abrirse paso por sí mismos.
+
+                <br>
+                <br>
+                
+                Los muchachos de las secciones menaje, zapatería y modas comenzaron a pergeñar la conformación de un nuevo equipo de fútbol para poder jugar sin depender de las decisiones de los mayores. Finalmente, el jueves 4 de agosto de 1904 decidieron realizar una reunión de elementos excluidos del equipo.
+
+                <br>
+                <br>
+                
+                El lugar elegido para la reunión fue el Almacén de los hermanos Telésforo y Policarpo Fuertes, que quedaba frente a la tienda: en Victoria (hoy Hipólito Yrigoyen) N° 584, en lo que es actualmente parte del Palacio de la Legislatura de la Ciudad Autónoma de Buenos Aires. Allí los ocho originales debatieron el destino de este desprendimiento. Algunos sugerían unirse a Atlanta Athletic Club, pero en medio del debate otro de los oradores reprochó enojado: “¡Qué Atlanta ni ocho cuartos! ¡Nosotros tenemos que tener un club independiente!” Y Rosendo Degiorgi gritó exaltado: “ahí está el nombre: ¡Independiente! Nos llamaremos Independiente”. De más está decir que la moción fue aprobada por aclamación.
+
+                <br>
+                <br>
+                
+                Se nombra a continuación una Comisión Directiva Provisoria, constituida por Rosendo Degiorgi (Presidente), Marcelo Degiorgi (secretario), Luis Bassou (tesorero), Nicolás Cabana, Antonio Cabana, Nicolás Bassou, Fernando Aizpuru y J.F. Ipart (vocales). Con la CD en funciones, se pusieron manos a la obra con el secreto anhelo de hacer del Independiente Football Club algo grande. Y vaya que lo lograron.
+
+                <br>
+                <br>
+                
+                Consiguieron una pelota y un sello de goma para los documentos, se estableció que cuota social valdría 25 centavos, y comenzaron a captarse nuevos asociados. Se unieron 17 emprendedores, entre ellos los hermanos Arístides y Edelmiro Langone, quienes jugaban en el Palte United FC de Barracas al Nord, cuya camiseta blanca fue utilizada en los primeros partidos del IFC. Este núcleo de 25 socios serían los socios fundadores para la posteridad.
+
+                <br>
+                <br>
+                
+                Con la cantidad suficiente de “players” para formar dos equipos se abocaron a la segunda etapa: conseguir un campo de juego para comenzar a competir (ingresá aquí para conocer todos los estadios que tuvo Independiente).
+
+                <br>
+                <br>
+                
+                Llegaba así el fin del año 1904, se acercaban las fiestas y el grupo de jóvenes pioneros colmados de ilusiones tenían en sus decisiones (y en sus pies) el germen de una gloria que maduraría día a día en el devenir de los siguientes 111 años.
+
+                <br>
+                <br>
+                
+                Se decide llamar a la primera asamblea en la cual se oficializaría la constitución del club para el domingo 1° de enero de 1905, en el domicilio de Daniel Bevilacqua (socio fundador), Esmeralda 329, 3° piso. En ella se presentarían los cargos directivos que regirían los destinos de Independiente y se delinearían los estatutos que serían guía de las actividades del club.
+
+                <br>
+                <br>
+                
+                La asamblea se frustra debido a la escasa asistencia a la misma y la mala condición de los presentes, afectados por los intensos festejos del reciente año nuevo. Nos obstante se resuelve en minoría dejar claramente establecido ese día como fecha de fundación del INDEPENDIENTE FOOTBALL . Asimismo se decide llamar a una nueva asamblea para el 17 de marzo.
+
+                <br>
+                <br>
+                
+                A todos ellos jóvenes, el eterno agradecimiento de haber creado a ese equipo rebelde y entusiasta, que hoy conocemos como el Rey de Copas y el Orgullo Nacional.
+                </p>
+        </section>
+
+        
+
+
+        <section class="autoridades">
+
+            <h2>Autoridades del club</h2>
+
+            <div class="autoridades1">
+                <div>
+                    <img src="../img/presidente.jpg" alt="Presidente de Mingo F.C.">
+                    <h3>Presidente</h3>
+                    <h4>Tomás Franco Lazzaro</h4>
+                </div>
+    
+                <div>
+                    <img src="../img/presidente.jpg" alt="Vicepresidente de Mingo F.C.">
+                    <h3>Vicepresidente</h3>
+                    <h4>Leandro Martín Siri</h4>
+                </div>
+    
+                <div>
+                    <img src="../img/presidente.jpg" alt="Secretario general de Mingo F.C.">
+                    <h3>Secretario general</h3>
+                    <h4>Francisco Orlando Pérez</h4>
+                </div>
+            </div>
+            
+ 
+        </section>
+
+        <section class="sedes">
+
+            <h2>Nuestras sedes</h2>
+
+            <div class="sedes1">
+                <div>
+                    <img src="../img/sb5.jpeg" alt="Canchas de SB5">
+                    <h3>SB5 fútbol</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aperiam ipsam voluptatem dolor ut est aut dignissimos esse, facere porro sequi ratione quaerat tempore omnis quo repudiandae doloremque nulla distinctio? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aperiam ipsam voluptatem dolor ut est aut dignissimos esse, facere porro sequi ratione quaerat tempore omnis quo repudiandae doloremque nulla distinctio.</p>
+                </div>
+    
+                <div>
+                    <img src="../img/platense.jpg" alt="Canchas de Platense">
+                    <h3>Platense</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aperiam ipsam voluptatem dolor ut est aut dignissimos esse, facere porro sequi ratione quaerat tempore omnis quo repudiandae doloremque nulla distinctio? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aperiam ipsam voluptatem dolor ut est aut dignissimos esse, facere porro sequi ratione quaerat tempore omnis quo repudiandae doloremque nulla distinctio.</p>
+                </div>
+
+            </div>
+        
+        </section>
 
     <!--Inicio Footer-->
     
-    <footer class="footer">
-         
-        <div class="conteiner">
-
-            <div class="footer_row">
-
-                <div class="footer_links">
-                    <h4>Club</h4>
-                    <ul>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Sedes</a></li>
-                        <li><a href="#">Autoridades</a></li>
-                        <li><a href="#">Estatuto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_links">
-                    <h4>Fútbol</h4>
-                    <ul>
-                        <li><a href="#">Tabla de posiciones</a></li>
-                        <li><a href="#">Fixture</a></li>
-                        <li><a href="#">Futbolistas</a></li>
-                        <li><a href="#">Multimedia</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_links">
-                    <h4>Socios</h4>
-                    <ul>
-                        <li><a href="#">Asociate</a></li>
-                        <li><a href="#">Entradas</a></li>
-                        <li><a href="#">Información para socios/as</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_links">
-                    <h4>Tienda</h4>
-                    <ul>
-                        <li><a href="#">Camisetas</a></li>
-                        <li><a href="#">Shorts y joggings</a></li>
-                        <li><a href="#">Buzos y camperas</a></li>
-                        <li><a href="">Accesorios</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer_links">
-                    <h4>Seguinos</h4>
-                    <div class="social_links">
-                        <a target="_blank" href="https://www.tiktok.com/@todopelotatdf"><i class="fab fa-tiktok"></i></a>
-                        <a target="_blank" href="https://instagram.com/mingo_fc?igshid=YzAwZjE1ZTI0Zg=="><i class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://twitter.com/Sangreminguense"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=afgUL9vYjGg&ab_channel=TodoPelotaTDF"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+    <footer>
+        <div class="container2">
+          <div class="footer-section">
+            <h2>Enlaces</h2>
+            <ul class="enlaces1">
+              <li class="footer_items"><a href="../index.html">Inicio</a></li>
+              <li class="footer_items"><a href="../pages/club.html">Club</a></li>
+              <li class="footer_items"><a href="./futbol.html">Futbol</a></li>
+              <li class="footer_items"><a href="../pages/socios.html">Socios</a></li>
+              <li class="footer_items"><a href="../pages/tienda.html">Tienda</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section footer-contact">
+            <h2>Contacto</h2>
+            <p><i class="fa fa-map-marker"></i> Av. Dr. Ricardo Balbín 4750
+            <p><i class="fa fa-envelope"></i> Mingofc@gmail.com.ar</p>
+          </div>
+    
+          <div class="footer-section footer-social">
+            <h2>Redes Sociales</h2>
+            <div class="social_links">
+                <a target="_blank" href="https://www.tiktok.com/@todopelotatdf"><i class="fab fa-tiktok"></i></a>
+                <a target="_blank" href="https://instagram.com/mingo_fc?igshid=YzAwZjE1ZTI0Zg=="><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/Sangreminguense"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=afgUL9vYjGg&ab_channel=TodoPelotaTDF"><i class="fab fa-youtube"></i></a>
             </div>
-        </footer>>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>&copy; 2023 Mingo F.C. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>

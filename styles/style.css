@@ -8,67 +8,7 @@
 }
 
 
-/*Inicio header*/
-
-header {
-    background-color: #57c2d6;
-    display: flex;
-    justify-content: center;
-    height: 100px;
-}
-
-.icon_menu {
-    display: flex;
-    text-decoration: none;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    width: 84px;
-}
-
-.logo_text {
-    display: flex;
-    color: white ;
-    align-items: center;
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 700;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    gap: 20px; 
-    grid-gap: 24px;
-    align-items: center;
-    margin-left: 800px;
-}
-
-.menu_item a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.menu_item a:hover {
-    color: #79263a;
-}
-
-.menu_item.active a {
-    color: #79263a ;
-} 
-
-
-
-
-/*Inicio Main*/
+/* --------------------------------------------------------------------------- MAIN INDEX ---------------------------------------------------------------------------- */
 
 .portada {
     background-color: #79263a;
@@ -94,7 +34,8 @@ header {
     font-size: 40px;
     margin-top: 350px;
     margin-right: 400px ;
-    padding: 0 20px 0 10px;
+    padding: 0 20px 5px 10px;
+    font-family:'Outfit', sans-serif;
 }
 
 .titulo_portada2 {
@@ -104,63 +45,107 @@ header {
     color: white;
     margin-top: 450px;
     font-size: 40px;
-    padding: 0 20px 0 10px;
+    padding: 0 20px 5px 10px;
     margin-right: 150px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 40px;
+    
+}
+
+.img_stats {
+    display: flex;
 }
 
 
 
 /* Inicio Foooter */
 
-footer ul {
-    list-style-type: none;
-}
+footer {
+    background-color: #57c2d6;
+    color: #fff;
+    padding: 20px 0;
+  }
 
-.container {
+  .container2 {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer {
-    background-color:#57c2d6;
-    padding: 60px;
-}
-
-.footer_row {
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200PX;
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .enlaces1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.footer_links {
-    width: 20%;
-    padding: 0 50px;
+.footer_items {
+    margin-left: -30px;
 }
 
-.footer_links h4 {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 25px;
-    border-bottom: 2px solid white;
-    font-weight: 400px;
-    display: inline-block;
-}
-
-.footer_links ul li a {
-    font-size: 18px;
-    font-weight: 200;
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-
-.footer_links ul li a:hover {
+  .footer-section ul li a:hover {
     color: #79263a;
-    padding-left: 6px;
-}
+  }
 
-.social_links a {
+  .footer-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .footer-section ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  .footer-section .footer-contact {
+    width: 40%;
+  }
+
+  .footer-section .footer-contact p {
+    line-height: 1.8;
+    color: #aaa;
+  }
+
+  .footer-section .footer-contact i {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+
+  .footer-bottom {
+    background-color: #57c2d6;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    color: #fff;
+  }
+
+  .social_links a {
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -183,7 +168,14 @@ footer ul {
 
 
 
-/* MAIN FUTBOL */
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- MAIN FUTBOL ---------------------------------------------------------------------------- */
 
 
 
@@ -198,7 +190,7 @@ footer ul {
     position: absolute;
     margin-left: 150px;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .posiciones {
@@ -269,8 +261,8 @@ th {
     display: flex;
     position: absolute;
     margin-left: 150px;
-    margin-top: 40px;
-    font-size: 24px;
+    margin-top: 70px;
+    font-size: 28px;
 }
 
 .fixture {
@@ -285,7 +277,7 @@ th {
 
 .container_resultados {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 70px auto;
   }
 
 .resultados {
@@ -315,9 +307,9 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1390px;
+    margin-right: 1360px;
     margin-bottom: 110px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .titulo_plantel {
@@ -328,7 +320,7 @@ th {
     position: absolute;
     margin-left: 220px;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 28px;
 
 }
 
@@ -343,13 +335,13 @@ th {
 }
 
 .player-card {
-  background-color: ;
+  color: white;
+  background-color: #792639e8;
   border-radius: 12px;
-  border: solid 1px #57c3d663;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  padding: 0px;
+  padding-bottom: 15px;
   text-align: center;
-  width: 300px; /
+  width: 300px; 
 }
 
 .player-card img {
@@ -387,4 +379,588 @@ th {
 }
 
 
-/* MULTIMEDIA */
+/* MULTIMEDIA */ 
+
+
+.multimedia_seccion {
+    background-color: #57c2d6;
+}
+
+.multimedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1230px;
+    padding-top: 70px;
+  
+}
+
+.titulo_multimedia {
+    background-color: #79263a;
+    color: white;
+    padding-inline: 10px;
+    font-size: 28px;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1320px;
+    margin-top: 80px;
+}
+
+.titulo_videos {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline solid 3px ;
+}
+
+
+.frames {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sigma {
+    border-radius: 10px;
+    border: solid 5px #79263a;
+}
+
+.malvinas {
+    border-radius: 10px;
+    border: solid 5px #79263a;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1350px;
+    margin-top: 100px;
+}
+
+.titulo_fotos {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline solid 3px ;
+}
+
+
+.multimedia_fotos {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "caja1 caja2 caja3"
+    "caja4 caja5 caja6"
+    "caja7 caja8 caja9";
+    gap: 14px 20px;
+    margin-inline: 240px;
+    padding-bottom: 70px;
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.caja6 {
+    grid-area: caja6;
+}
+
+.caja7 {
+    grid-area: caja7;
+}
+
+.caja8 {
+    grid-area: caja8;
+}
+
+.caja9 {
+    grid-area: caja9;
+}
+
+
+.foto_futbol {
+    width: 100%;
+  
+}
+
+.cierre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cierre_img {
+    width: 130px;
+    padding-block: 30px;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- MAIN TIENDA ---------------------------------------------------------------------------- */
+
+
+.tienda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.titulo_tienda {
+    font-size: 40px;
+    color: #79263a;
+    text-decoration: underline solid 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    
+}
+
+.camisetas {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_camisetas {
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+}
+
+
+.pantalones {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_pantalones {
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+
+.abrigo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.titulo_abrigo {
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+
+
+.accesorios {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.titulo_accesorios {
+    color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+
+/* --------------------------------------------------------------------------- MAIN SOCIOS ---------------------------------------------------------------------------- */
+
+
+/* Asociarse */
+
+
+.socios {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.titulo_socios {
+    color: #79263a;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.subtitulo_socios {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.formulario {
+    margin-top: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #2d94a3;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sexo select {
+padding: 10px;
+}
+
+.espaciado_form {
+    margin-block: 15px;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-block: 30px;
+}
+
+.boton_enviar {
+background-color: #57c2d6;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+}
+
+.boton_borrar {
+    background-color: transparent;
+    color: #57c2d6;
+    padding: 10px 20px;
+    border: #57c2d6 solid 1px;
+    border-radius: 5px;
+}
+
+
+/* Información para socios */
+
+
+.fondo_info {
+    background-color: #792639c0;
+    padding-bottom: 100px;
+}
+
+
+.info_socios {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 40px;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: white;
+    gap: 20px;
+}
+
+.beneficios h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.beneficios h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.beneficios h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.beneficios p {
+    font-size: 20px;
+}
+
+
+/* Contactos */
+
+
+.contacto {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    text-align: left;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #57c2d6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.contactos {
+    padding-block: 80px;
+}
+
+.form_contacto {
+    margin-top: 50px;
+}
+
+
+/* --------------------------------------------------------------------------- MAIN CLUB ---------------------------------------------------------------------------- */
+
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: white;
+    padding-top: 80px;
+    background-color: #792639c0;;
+}
+
+.historia h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.historia img {
+    width: 400px;
+}
+
+.historia p {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.autoridades1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 300px;
+    color: black;
+    margin-top: 80px;
+    gap: 16%;
+}
+
+.autoridades h2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 980px;
+    color: #79263a;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.autoridades img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.autoridades h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #79263a;
+}
+
+.autoridades h4 {
+    font-weight: 300;
+}
+
+
+
+.sedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 300px;
+    color: white;
+    padding-top: 80px;
+    background-color: #792639c0;
+}
+
+.sedes h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.sedes1 img {
+    width: 800px;
+    margin-top: 40px;
+}
+
+.sedes1 h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.sedes1 p {
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
+} 
+
+.enlaces1 {
+  display: inline-block;
+}
+
+.footer_items {
+    margin-left: 5px;
+}
+
+.beneficios {
+    padding: 10px;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+
+.historia {
+padding: 10px;
+}
+
+.historia h2 {
+    margin-top: 80px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
