@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.portada {
+  background-color: #79263a;
+  padding-block: 50px;
+}
+.portada .horizontal-scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.portada .horizontal-scroll-container .image {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  scroll-snap-align: center;
+  position: relative;
+}
+.portada .horizontal-scroll-container .image img {
+  max-width: 100%;
+  height: auto;
+  width: 1000px;
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container .image img {
+    width: 450px;
+    margin-left: 12px;
+  }
+}
+.portada .horizontal-scroll-container .image .texto_portada {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.portada .horizontal-scroll-container .image .texto_portada .texto1,
+.portada .horizontal-scroll-container .image .texto_portada .texto2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #57c2d6;
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container .image .texto_portada .texto1,
+  .portada .horizontal-scroll-container .image .texto_portada .texto2 {
+    font-size: 30px;
+  }
+}
+.portada .horizontal-scroll-container .image .texto_portada .texto1 {
+  margin-inline: 90px;
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container .image .texto_portada .texto1 {
+    font-size: 30px;
+    padding-inline: 10px;
+  }
+}
+.portada .horizontal-scroll-container .image .texto_portada .texto2 {
+  margin-top: -8px;
+  padding-bottom: 5px;
+  padding-inline: 20px;
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container .image .texto_portada .texto2 {
+    font-size: 30px;
+    padding-bottom: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container .image.imagen1, .portada .horizontal-scroll-container .image.imagen3 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .portada .horizontal-scroll-container {
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+}
+
+.estadisticas {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 50px;
+}
+.estadisticas .proximo_partido h2 {
+  margin-bottom: 30px;
+  color: #57c2d6;
+  font-weight: 600;
+  font-size: 28px;
+}
+.estadisticas .proximo_partido img {
+  border: 3px solid #57c2d6;
+  border-radius: 25px;
+  padding: 10px;
+  width: 450px;
+}
+.estadisticas .ultimo_resultado h2 {
+  margin-bottom: 30px;
+  color: #57c2d6;
+  font-weight: 600;
+  font-size: 28px;
+}
+.estadisticas .ultimo_resultado img {
+  border: 3px solid #57c2d6;
+  border-radius: 25px;
+  padding: 10px;
+  width: 450px;
+}
+.estadisticas .posiciones_portada h2 {
+  margin-bottom: 30px;
+  color: #57c2d6;
+  font-weight: 600;
+  font-size: 28px;
+}
+.estadisticas .posiciones_portada img {
+  border: 3px solid #57c2d6;
+  border-radius: 25px;
+  padding: 10px;
+  width: 422px;
+}
+
+.titulo_posiciones {
+  color: white;
+  background-color: #79263a;
+  padding-inline: 10px;
+  padding-block: 2px;
+}
+
+.posiciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.tabla_posiciones {
+  max-width: 800px;
+  margin: 80px auto;
+}
+.tabla_posiciones table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tabla_posiciones table th, .tabla_posiciones table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.tabla_posiciones table th {
+  background-color: #57c2d6;
+  color: #fff;
+}
+
+.primero {
+  background-color: rgb(14, 177, 14);
+}
+
+.segundo {
+  background-color: rgb(124, 231, 124);
+}
+
+.anteultimo,
+.ultimo {
+  background-color: rgb(228, 74, 74);
+}
+
+@media screen and (max-width: 480px) {
+  th, td {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .tabla_posiciones {
+    max-width: 95%;
+    overflow-x: auto;
+  }
+}/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,59 @@
+.estadisticas {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 50px;
+
+    .proximo_partido {
+       
+        h2 {
+            margin-bottom: 30px;
+            color: $mainColor;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        img {
+            border: 3px solid $mainColor;
+            border-radius: 25px;
+            padding: 10px;
+            width: 450px;
+        }
+    }
+    
+    .ultimo_resultado {
+        
+        h2 {
+            margin-bottom: 30px;
+            color: $mainColor;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        img {
+            border: 3px solid $mainColor;
+            border-radius: 25px;
+            padding: 10px;
+            width: 450px;
+        }
+    }
+
+    .posiciones_portada {
+
+        h2 {
+            margin-bottom: 30px;
+            color: $mainColor;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        img {
+            border: 3px solid $mainColor;
+            border-radius: 25px;
+            padding: 10px;
+            width: 422px;
+        }
+        
+    }
+}

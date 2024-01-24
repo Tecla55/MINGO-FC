@@ -1,0 +1,89 @@
+.portada {
+    background-color: $secondaryColor;
+    padding-block: 50px;
+  
+    .horizontal-scroll-container {
+      display: flex;
+      overflow-x: scroll;
+      width: 100%;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+  
+      .image {
+        flex: 0 0 auto;
+        margin-right: 30px;
+        scroll-snap-align: center;
+        position: relative;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          width: 1000px;
+  
+          // Media Query para la imagen2
+          @media (max-width: 480px) {
+            width: 450px;
+            margin-left: 12px;
+          }
+        }
+  
+        .texto_portada {
+          position: absolute;
+          top: 85%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+  
+          .texto1,
+          .texto2 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: $mainColor;
+  
+            // Media Query para texto1 y texto2
+            @media (max-width: 480px) {
+              font-size: 30px;
+            }
+          }
+  
+          .texto1 {
+            margin-inline: 90px;
+  
+            // Media Query para texto1
+            @media (max-width: 480px) {
+              font-size: 30px;
+              padding-inline: 10px;
+            }
+          }
+  
+          .texto2 {
+            margin-top: -8px;
+            padding-bottom: 5px;
+            padding-inline: 20px;
+  
+            // Media Query para texto2
+            @media (max-width: 480px) {
+              font-size: 30px;
+              padding-bottom: 1px;
+            }
+          }
+        }
+  
+        // Ocultar imagen1 y imagen3 en diseño responsive
+        @media (max-width: 480px) {
+          &.imagen1,
+          &.imagen3 {
+            display: none;
+          }
+        }
+      }
+  
+      // Ocultar barra de desplazamiento en diseño responsive
+      @media (max-width: 480px) {
+        overflow-x: hidden;
+        scrollbar-width: none;
+      }
+    }
+  }

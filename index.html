@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingo F.C | Sitio oficial</title>
+    <meta name="description" content="El club de los pibes">
+    <meta name="keywords" content="Mingo, Mingo F.C., SB5, Platense, TodoPelota, Argentina, Fútbol">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/estilo.css">
 </head>
 <body>
 
@@ -32,19 +35,19 @@
                 <div class="collapse navbar-collapse" id="mi-menu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html" style="color: #79263a; font-size: 18px; font-weight: 400; transition: color 0.3s;">Inicio</a>
+                            <a class="nav-link" href="./index.html" style="color: #79263a; font-size: 18px; font-weight: 600; transition: color 0.3s;">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/club.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Club</a>
+                            <a class="nav-link" href="./pages/club.html" style="color: white; font-size: 18px; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Club</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/futbol.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Fútbol</a>
+                            <a class="nav-link" href="./pages/futbol.html" style="color: white; font-size: 18px; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Fútbol</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/socios.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Socios</a>
+                            <a class="nav-link" href="./pages/socios.html" style="color: white; font-size: 18px; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Socios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/tienda.html" style="color: white; font-size: 18px; font-weight: 400; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Tienda</a>
+                            <a class="nav-link" href="./pages/tienda.html" style="color: white; font-size: 18px; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#79263a'" onmouseout="this.style.color='white'">Tienda</a>
                         </li>
                     </ul>
                 </div>
@@ -55,19 +58,34 @@
     <!--Inicio main-->
     
     <main>
-        <section class="portada" >
-            <img class="img_portada" src="./img/mingo-equipo.jpeg" alt="Foto del equipo">
-            <h2 class="titulo_portada">Victoria agónica</h2>
-            <h2 class="titulo_portada2">de Mingo ante Taiwan F.C!</h2>
+        <section class="portada">
+            <div class="horizontal-scroll-container">
+                <div class="image imagen1"><img src="img/fotos4-portada.jpg" alt="Imágen del partido"></div>
+                <div class="image imagen2">
+                    <img src="img/mingo-portada.jpeg" alt="Foto del equipo entero">
+                    <div class="texto_portada">
+                        <h2 class="texto1">Victoria agónica</h2>
+                        <h2 class="texto2">de Mingo ante Taiwan F.C.</h2>
+                    </div>
+                </div>
+                <div class="image imagen3"><img src="img/fotos5-portada.jpg" alt="Imágen del partido"></div>
+            </div>
         </section>
 
-        
-        <section class="stats">
-            <img class="img_stats" src="./img/stats.png" alt="estadisticas">
-           
+        <section class="estadisticas">
+            <div class="proximo_partido">
+                <h2>Próximo Partido</h2>
+                <img src="./img/proximo-partido.png" alt="proximo partido de Mingo F.C.">
+            </div>
+            <div class="ultimo_resultado">
+                <h2>Último partido</h2>
+                <img src="./img/resultado.png" alt="resultadi del último partido de Mingo F.C.">
+            </div>
+            <div class="posiciones_portada">
+                <h2>Tabla de posiciones</h2>
+                <img src="./img/posiciones2.png" alt="Tabla de posiciones">
+            </div>
         </section>
-
-        
     </main>
 
     <!--Inicio Footer-->
