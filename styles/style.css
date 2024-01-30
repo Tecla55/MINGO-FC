@@ -8,7 +8,7 @@
 }
 
 
-/* --------------------------------------------------------------------------- MAIN INDEX ---------------------------------------------------------------------------- */
+
 
 
 
@@ -18,12 +18,13 @@
 
 
 
-/* Tabla de pciones */
+/* Tabla de posiciones */
 
 
 .titulo_posiciones {
     color: white;
     background-color: #79263a;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 2px;
 }
@@ -90,6 +91,7 @@ th {
 .titulo_fixture {
     color: white;
     background-color: #57c2d6;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 2px;
 }
@@ -139,6 +141,7 @@ th {
 .titulo_plantel {
     color: white;
     background-color: #79263a;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 2px;
 
@@ -199,7 +202,7 @@ th {
 }
 
 
-/* MULTIMEDIA */ 
+/* multimedia */ 
 
 
 .multimedia_seccion {
@@ -216,6 +219,7 @@ th {
 .titulo_multimedia {
     color: white;
     background-color: #79263a;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 2px;
 }
@@ -353,7 +357,7 @@ th {
     font-size: 40px;
     color: #79263a;
     padding: 10px 20px;
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
@@ -366,7 +370,9 @@ th {
 .titulo_camisetas {
     color: white;
     background-color: #57c2d6;
+    border-radius: 5px;
     padding-inline: 10px;
+    font-size: 30px;
 }
 
 
@@ -379,8 +385,10 @@ th {
 .titulo_pantalones {
     color: white;
     background-color: #57c2d6;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 5px;
+    font-size: 30px;
 }
 
 
@@ -393,8 +401,10 @@ th {
 .titulo_abrigo {
     color: white;
     background-color: #57c2d6;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 5px;
+    font-size: 30px;
 }
 
 
@@ -409,8 +419,10 @@ th {
 .titulo_accesorios {
     color: white;
     background-color: #57c2d6;
+    border-radius: 5px;
     padding-inline: 10px;
     padding-block: 5px;
+    font-size: 30px;
 }
 
 
@@ -539,11 +551,19 @@ border-radius: 5px;
     gap: 20px;
 }
 
-.beneficios h2 {
+.importante  {
+    display: flex;
+}
+
+.titulo_importante  {
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
     margin-bottom: 40px;
     font-size: 36px;
     font-weight: 600;
 }
+
 
 .beneficios h3 {
     font-size: 28px;
@@ -602,11 +622,13 @@ button {
 
 /* --------------------------------------------------------------------------- MAIN CLUB ---------------------------------------------------------------------------- */
 
+/* Historia club */
 
 .historia {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding-inline: 300px;
     color: white;
@@ -620,10 +642,25 @@ button {
     font-weight: 600;
     color: white;
     white-space: nowrap;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
 }
 
-.historia img {
-    width: 400px;
+.imagenes_club {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    width: 100%;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    border: #57c2d6 3px solid;
+}
+
+
+.imagenes_club img {
+    height: 500px;
 }
 
 .historia p {
@@ -632,6 +669,9 @@ button {
     font-weight: 200;
     padding-bottom: 50px;
 }
+
+
+/* Autoridades */
 
 .autoridades1 {
     display: flex;
@@ -647,7 +687,7 @@ button {
 .autoridades h2 {
     display: flex;
     justify-content: center;
-    margin-right: 980px;
+    align-items: center;
     color: #79263a;
     font-size: 36px;
     font-weight: 600;
@@ -662,6 +702,14 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
 }
 
+.vice {
+    height: 450px;
+}
+
+.secretario {
+    height: 450px;
+}
+
 .autoridades h3 {
     font-size: 28px;
     font-weight: 700;
@@ -674,11 +722,14 @@ button {
 }
 
 
+/* Sedes */
+
 
 .sedes {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-inline: 300px;
     color: white;
     padding-top: 80px;
@@ -690,18 +741,24 @@ button {
     font-size: 36px;
     font-weight: 600;
     color: white;
+    background-color: #57c2d6;
+    padding-inline: 10px;
+    border-radius: 5px;
 }
 
 
 .sedes1 img {
     width: 800px;
     margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
 }
+
+
 
 .sedes1 h3 {
     font-size: 28px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -719,23 +776,23 @@ footer {
     background-color: #57c2d6;
     color: #fff;
     padding: 20px 0;
-  }
+}
 
-  .container2 {
+.container2 {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
     gap: 200PX;
-  }
+}
 
-  .footer-section {
+.footer-section {
     width: 100%;
     padding: 20px;
-  }
+}
 
-  .enlaces1 {
+.enlaces1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -745,56 +802,56 @@ footer {
     margin-left: -30px;
 }
 
-  .footer-section ul li a:hover {
+.footer-section ul li a:hover {
     color: #79263a;
-  }
+}
 
-  .footer-section h2 {
+.footer-section h2 {
     margin-bottom: 20px;
-  }
+}
 
-  .footer-section ul li {
+.footer-section ul li {
     display: inline-block;
     margin-bottom: 10px;
-  }
+}
 
-  .footer-section ul li a {
+.footer-section ul li a {
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;
     border: 1px solid #fff;
     border-radius: 5px;
-  }
+}
 
-  .footer-section .footer-contact {
+.footer-section .footer-contact {
     width: 40%;
-  }
+}
 
-  .footer-section .footer-contact p {
+.footer-section .footer-contact p {
     line-height: 1.8;
     color: #aaa;
-  }
+}
 
-  .footer-section .footer-contact i {
+.footer-section .footer-contact i {
     margin-right: 10px;
     font-size: 18px;
-  }
+}
 
 
-  .footer-bottom {
+.footer-bottom {
     background-color: #57c2d6;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     bottom: 0;
-  }
+}
 
-  .footer-bottom p {
+.footer-bottom p {
     margin: 0;
     color: #fff;
-  }
+}
 
-  .social_links a {
+.social_links a {
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -816,6 +873,9 @@ footer {
 
 @media screen and (max-width: 480px){
 
+
+/* FOOTER */    
+
 .container2 {
   display: flex;
   flex-direction: column;
@@ -831,22 +891,25 @@ footer {
     margin-left: 5px;
 }
 
+
+/* MAIN SOCIOS */
+
 .beneficios {
-    padding: 10px;
+    padding: 15px;
+}
+
+.titulo_importante {
+    margin-left: 123px;
+}
+
+.beneficios h3 {
+    margin-left: 66px;
 }
 
 .info_socios {
     font-size: 36px;
 }
 
-
-.historia {
-padding: 10px;
-}
-
-.historia h2 {
-    margin-top: 80px;
-}
 
 /*MAIN INDEX*/
 
@@ -877,8 +940,6 @@ padding: 10px;
 
 .estadisticas {
     flex-direction: column;
-    gap: 100px;
-   
 }
 
 .proximo_partido h2 {
@@ -891,6 +952,7 @@ padding: 10px;
 
 .ultimo_resultado h2 {
     margin-left: 145px;
+    margin-top: -50PX;
 }
 
 .ultimo_resultado img {
@@ -899,14 +961,18 @@ padding: 10px;
 
 .posiciones_portada h2 {
     margin-left: 120px;
+    margin-top: -50px;
 }
 
 .posiciones_portada img {
-    margin-left: 15px;
+    margin-left: 30px;
     width: 450px;
 }
 
-/* Tabla de posiciones */
+
+/* MAIN FÚTBOL */
+
+/* Tabla */
 
 
 th, td {
@@ -980,17 +1046,17 @@ th, td {
 
 /*MAIN CLUB*/
 
+.historia {
+    padding: 10px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
 .historia img {
     margin-left: 5px;
     width: 450px;
-}
-
-.historia h2 {
-    margin-left: 100px;
-}
-
-.autoridades h2 {
-    margin-left: 235px;
 }
 
 .autoridades1 {
@@ -1005,17 +1071,18 @@ th, td {
     padding-inline: 10px;
 }
 
-.sedes h2 {
-    margin-left: 105px;
-}
-
-
 .sedes1 img {
     width: 460px;
 }
 
+.imagenes_club {
+    border: none;
+    gap: none;
+}
 
-
+.club2, .club3 {
+    display: none; 
+}
 
 
 }
