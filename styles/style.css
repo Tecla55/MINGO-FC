@@ -696,7 +696,7 @@ button {
     white-space: nowrap;
 }
 
-.autoridades img {
+.autoridades1 img {
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
@@ -710,14 +710,14 @@ button {
     height: 450px;
 }
 
-.autoridades h3 {
+.autoridades1 h3 {
     font-size: 28px;
     font-weight: 700;
     margin-top: 20px;
     color: #79263a;
 }
 
-.autoridades h4 {
+.autoridades1 h4 {
     font-weight: 300;
 }
 
