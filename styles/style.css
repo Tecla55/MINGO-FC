@@ -228,7 +228,6 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1320px;
     margin-top: 80px;
 }
 
@@ -261,7 +260,6 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1350px;
     margin-top: 100px;
 }
 
@@ -564,6 +562,10 @@ border-radius: 5px;
     font-weight: 600;
 }
 
+
+.categoria {
+    margin-top: 30px;
+}
 
 .beneficios h3 {
     font-size: 28px;
@@ -869,7 +871,334 @@ footer {
 }
 
 
+@media screen and (min-width:1025px) and (max-width: 1600px){
 
+/* INDEX */    
+
+.estadisticas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo_partido h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.posiciones_portada h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
+}
+
+/* CLUB */
+
+.historia {
+    padding: 50px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
+.historia img {
+    display: flex;
+    align-items: center;
+    width: 550px;
+}
+
+/* FUTBOL */
+
+.jugadores1 {
+    margin-inline: 15px;
+}
+
+.jugadores2 {
+    margin-inline: 15px;
+}
+
+.jugadores3 {
+    margin-inline: 15px;
+}
+
+.videos {
+    margin-top: 50px;
+}
+
+
+.frames {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sigma {
+    width: 450px;
+}
+
+.malvinas {
+    width: 450px;
+}
+
+.fotos {
+    margin-top: 50px;
+}
+
+
+.multimedia_fotos {
+    grid-template-columns: repeat(1,1fr);
+    margin-inline: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+
+/* SOCIOS */
+
+.beneficios {
+    padding: 15px;
+}
+
+.importante {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+.categoria {
+    margin-top: 30px;
+    padding-inline: 50px;
+}
+
+
+
+
+
+}
+
+@media screen and (min-width:481px) and (max-width: 1024px){
+
+
+
+/* FOOTER */
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.enlaces1 {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer_items {
+    font-size: 24px;
+}
+
+.footer-contact {
+    margin-top: -150px;
+    
+}
+
+.footer-social {
+    margin-top: -150px;
+}
+
+
+
+/* INDEX */
+
+
+
+.estadisticas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximo_partido h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.posiciones_portada h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
+}
+
+/* CLUB */
+
+.historia {
+    padding: 50px;
+}
+    
+.historia h2 {
+    margin-top: 80px;
+}
+
+.historia img {
+    display: flex;
+    align-items: center;
+    width: 550px;
+}
+
+.autoridades1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0px;
+    gap: 50px;
+}
+
+.sedes {
+    padding-inline: 50px;
+}
+
+.sedes1 img {
+    width: 460px;
+}
+
+/* FÚTBOL */
+
+/* tablas */
+
+th, td {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.tabla_posiciones {
+    max-width: 100%;
+    margin-inline: 25px;
+    overflow-x: auto;
+}
+
+.container_resultados {
+    max-width: 95%;
+    overflow-x: auto;
+}
+
+.jugadores1 {
+    flex-direction: column;
+}
+
+.jugadores2 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+.jugadores3 {
+    flex-direction: column;
+    margin-top: -35px;
+}
+
+/* Multimedia */
+
+.videos {
+    margin-top: 50px;
+}
+
+
+.frames {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sigma {
+    width: 450px;
+}
+
+.malvinas {
+    width: 450px;
+}
+
+.fotos {
+    margin-top: 50px;
+}
+
+
+.multimedia_fotos {
+    grid-template-columns: repeat(1,1fr);
+    margin-inline: 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+/* SCOCIOS */
+
+.beneficios {
+    padding: 15px;
+}
+
+.importante {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info_socios {
+    font-size: 36px;
+}
+
+.categoria {
+    margin-top: 30px;
+    padding-inline: 50px;
+}
+
+    
+}
 
 @media screen and (max-width: 480px){
 
@@ -915,7 +1244,6 @@ footer {
 
 .imagen2 img {
     width: 450px;
-    margin-left: 12px;
 }
 
 .texto_portada {
@@ -940,33 +1268,34 @@ footer {
 
 .estadisticas {
     flex-direction: column;
+    align-items: center;
 }
 
 .proximo_partido h2 {
-    margin-left: 140px;
-}
-
-.proximo_partido img {
-    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ultimo_resultado h2 {
-    margin-left: 145px;
-    margin-top: -50PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ultimo_resultado img {
-    margin-left: 15px;
-}
 
 .posiciones_portada h2 {
-    margin-left: 120px;
-    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.posiciones_portada img {
-    margin-left: 30px;
-    width: 450px;
+.ultimo_resultado {
+    margin-top: -30px;
+}
+
+.posiciones_portada {
+    margin-top: -30px;
 }
 
 
@@ -1086,6 +1415,20 @@ th, td {
 
 
 }
+
+
+
+
+
+
+
+}
+
+
+
+
+    
+
 
 
 

@@ -20,13 +20,22 @@
           max-width: 100%;
           height: auto;
           width: 1000px;
-  
           
           @media (max-width: 480px) {
             width: 450px;
             margin-left: 12px;
           }
         }
+    
+    @media (min-width: 481px) and (max-width:1024px) {
+      display: flex;
+      gap: 15px;
+      overflow-x: scroll;
+      width: 100%;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+    }  
   
         .texto_portada {
           position: absolute;
@@ -44,7 +53,7 @@
   
         
             @media (max-width: 480px) {
-              font-size: 30px;
+              font-size: 20px;
             }
           }
   
@@ -70,7 +79,6 @@
             }
           }
         }
-  
         
         @media (max-width: 480px) {
           &.imagen1,
@@ -80,7 +88,6 @@
         }
       }
   
-      
       @media (max-width: 480px) {
         overflow-x: hidden;
         scrollbar-width: none;
